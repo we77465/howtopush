@@ -80,14 +80,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="canny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canny.Designer.cs">
+      <DependentUpon>canny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected-component labeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connected-component labeling.Designer.cs">
+      <DependentUpon>Connected-component labeling.cs</DependentUpon>
+    </Compile>
     <Compile Include="DIPSample.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DIPSample.Designer.cs">
       <DependentUpon>DIPSample.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OTSU.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Histogram equalization.cs">
       <SubType>Form</SubType>
@@ -113,6 +122,12 @@
     <Compile Include="MSForm.Designer.cs">
       <DependentUpon>MSForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OTSU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTSU.Designer.cs">
+      <DependentUpon>OTSU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zoom.cs">
@@ -121,12 +136,15 @@
     <Compile Include="Zoom.Designer.cs">
       <DependentUpon>Zoom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="canny.resx">
+      <DependentUpon>canny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connected-component labeling.resx">
+      <DependentUpon>Connected-component labeling.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DIPSample.resx">
       <DependentUpon>DIPSample.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OTSU.resx">
-      <DependentUpon>OTSU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Histogram equalization.resx">
       <DependentUpon>Histogram equalization.cs</DependentUpon>
@@ -140,6 +158,9 @@
     <EmbeddedResource Include="MSForm.resx">
       <DependentUpon>MSForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTSU.resx">
+      <DependentUpon>OTSU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
